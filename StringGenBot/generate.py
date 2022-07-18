@@ -38,6 +38,7 @@ buttons_ques = [
         InlineKeyboardButton("Pyrogram", callback_data="pyrogram1"),
         InlineKeyboardButton("Telethon", callback_data="telethon"),
     ]
+]
 
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command(["generate", "gen", "string", "str"]))
